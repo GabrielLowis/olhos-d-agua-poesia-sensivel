@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,7 +20,9 @@ export default {
 		extend: {
 			fontFamily: {
 				'serif': ['EB Garamond', 'Merriweather', 'serif'],
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'sans': ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
+				'display': ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
+				'body': ['Inter', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -108,7 +109,9 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				xl: '1rem',
+				'2xl': '1.5rem',
 			},
 			keyframes: {
 				'accordion-down': {
