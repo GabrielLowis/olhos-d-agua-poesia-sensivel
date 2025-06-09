@@ -67,42 +67,42 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cores personalizadas para o tema poético
-				earth: {
-					50: '#faf6f1',
-					100: '#f4ede0',
-					200: '#e7d8c0',
-					300: '#d7bf97',
-					400: '#c5a06b',
-					500: '#b8884d',
-					600: '#aa7441',
-					700: '#8d5e37',
-					800: '#734d31',
-					900: '#5e402a',
+				// Cores escuras personalizadas para o tema
+				midnight: {
+					50: '#1a1a2e',
+					100: '#16213e',
+					200: '#0f3460',
+					300: '#0e4b99',
+					400: '#2e86ab',
+					500: '#a23b72',
+					600: '#f18701',
+					700: '#f35b04',
+					800: '#c73e1d',
+					900: '#7209b7',
 				},
-				water: {
-					50: '#f0f9ff',
-					100: '#e0f2fe',
-					200: '#bae6fd',
-					300: '#7dd3fc',
-					400: '#38bdf8',
-					500: '#0ea5e9',
-					600: '#0284c7',
-					700: '#0369a1',
-					800: '#075985',
-					900: '#0c4a6e',
+				cosmic: {
+					50: '#0d1117',
+					100: '#161b22',
+					200: '#21262d',
+					300: '#30363d',
+					400: '#484f58',
+					500: '#6e7681',
+					600: '#8b949e',
+					700: '#b1bac4',
+					800: '#c9d1d9',
+					900: '#f0f6fc',
 				},
-				sage: {
-					50: '#f6f7f6',
-					100: '#e3e7e3',
-					200: '#c7cfc7',
-					300: '#a4b1a4',
-					400: '#7d907d',
-					500: '#627762',
-					600: '#4e5f4e',
-					700: '#414f41',
-					800: '#364136',
-					900: '#2d372d',
+				violet: {
+					50: '#f3f1ff',
+					100: '#ede9fe',
+					200: '#ddd6fe',
+					300: '#c4b5fd',
+					400: '#a78bfa',
+					500: '#8b5cf6',
+					600: '#7c3aed',
+					700: '#6d28d9',
+					800: '#5b21b6',
+					900: '#4c1d95',
 				}
 			},
 			borderRadius: {
@@ -154,6 +154,14 @@ export default {
 					'50%': {
 						transform: 'translateY(-6px)'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px rgba(139, 92, 246, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 20px rgba(139, 92, 246, 0.8)'
+					}
 				}
 			},
 			animation: {
@@ -161,7 +169,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.8s ease-out',
 				'verse-appear': 'verse-appear 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
